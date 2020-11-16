@@ -1,0 +1,13 @@
+/* Desktop Only */
+@media (min-width: 768px) {
+	.parallax-background {
+		background-attachment: fixed;
+	}
+}
+
+/* Mobile Only */
+@media screen and (max-width: 768px) {
+	.parallax-background {
+		background-attachment: scroll;
+	}
+}
