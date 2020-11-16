@@ -7,7 +7,6 @@ class MainHeader {
 		$this->current_page = $current_page;
 	}
 	function init() {
-		echo "<!-- Open MainHeader -->\n";
 		echo "<header class=\"main-header\">\n";
 		echo "<div class=\"header-flex\">\n";
 		$nav_menu_button = new NavMenuButton("Testing");
@@ -16,7 +15,6 @@ class MainHeader {
 		$nav_menu->init();
 		echo "</div>\n";
 		echo "</header>\n";
-		echo "<!-- Close MainHeader -->\n";
 	}
 }
 ?>

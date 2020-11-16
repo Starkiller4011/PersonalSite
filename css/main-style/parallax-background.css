@@ -1,3 +1,12 @@
+.parallax-background {
+	width: 100%;
+	opacity: 0.65;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* Desktop Only */
 @media (min-width: 768px) {
 	.parallax-background {

@@ -1,21 +1,31 @@
 <?php
 class SocialMediaBar {
-	private $links;
-	function __construct() {
-		$mail_link = new SocialMediaLink("email");
-		$twitter_link = new SocialMediaLink("twitter");
-		$linkedin_link = new SocialMediaLink("linkedin");
-		$github_link = new SocialMediaLink("github");
-		$stack_link = new SocialMediaLink("stack");
-		$this->links = array($mail_link, $twitter_link, $linkedin_link, $github_link, $stack_link);
-	}
 	function init() {
-		echo "<!-- Open SocialMediaBar -->\n";
+		echo "<!-- External Links -->\n";
 		echo "<div class=\"social-media\">\n";
-		$links_list = new ElementList($this->links);
-		Tools::SafeInit($links_list);
+		echo "<ul>\n";
+		echo "<li>\n";
+		$mail_link = new SocialMediaLink("email");
+		$mail_link->init();
+		echo "</li>\n";
+		echo "<li>\n";
+		$twitter_link = new SocialMediaLink("twitter");
+		$twitter_link->init();
+		echo "</li>\n";
+		echo "<li>\n";
+		$linkedin_link = new SocialMediaLink("linkedin");
+		$linkedin_link->init();
+		echo "</li>\n";
+		echo "<li>\n";
+		$github_link = new SocialMediaLink("github");
+		$github_link->init();
+		echo "</li>\n";
+		echo "<li>\n";
+		$stack_link = new SocialMediaLink("stack");
+		$stack_link->init();
+		echo "</li>\n";
+		echo "</ul>\n";
 		echo "</div>\n";
-		echo "<!-- Close SocialMediaBar -->\n";
 	}
 }
 ?>

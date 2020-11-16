@@ -45,12 +45,10 @@ class SocialMediaLink {
 		}
 	}
 	function init() {
-		echo "<!-- Open SocialMediaLink -->\n";
 		echo "<a href=\"" . $this->links[$this->media_type] . "\" target=\"" . $this->targets[$this->media_type] . "\" data-ga-click=\"" . $this->meta_data[$this->media_type] . "\" title=\"" . $this->titles[$this->media_type] . "\">\n";
 		$this->icon = new SvgIcon($this->icons[$this->media_type], "20px", "20px","#E2E2E2");
 		$this->icon->init();
 		echo "</a>\n";
-		echo "<!-- Close SocialMediaLink -->\n";
 	}
 }
 ?>

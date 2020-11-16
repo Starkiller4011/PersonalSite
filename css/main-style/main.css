@@ -9,13 +9,6 @@ header {
 	margin: 0px;
 }
 
-img {
-	display: flex;
-	object-fit: contain;
-	max-height: 100%;
-	max-width: 100%;
-}
-
 .menu-button {
 	margin: auto;
 	height: 100%;
